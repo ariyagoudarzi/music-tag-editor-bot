@@ -33,7 +33,7 @@ python music.py
 
 ## Configuration
 
-- `config.py`: Contains configuration variables such as Telegram API credentials.
+- __music.py__: Contains configuration variables such as Telegram API credentials.
 
 ## Contributors
 
