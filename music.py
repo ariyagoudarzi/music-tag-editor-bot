@@ -5,16 +5,16 @@ from mutagen.mp3 import MP3
 from mutagen.id3 import ID3, APIC, TIT2, TPE1, TALB, TYER, TCON, TPE2, TRCK
 import random
 
-api_id = 18104932
-api_hash = "7995bd9a1311b884e81e5ce00711e23a"
-bot_token = "5853371596:AAFD1mY64rvV5a1jMCiM2rNd4LutHd1kzJI"
+api_id = 
+api_hash = ""
+bot_token = ""
 
 app = Client("music_bot", api_id=api_id,
              api_hash=api_hash, bot_token=bot_token)
 
 states = {}
-# 1312237554
-AUTHORIZED_USERS = [5758010222, 6344812433, 6702221129, 6151310308, 1634225858]
+
+AUTHORIZED_USERS = []
 WELCOME_MESSAGE = """
 به ربات ویرایشگر برچسب موسیقی خوش آمدید! 🎵🎶
 یک فایل موسیقی برای من بفرست تا به شما در ویرایش برچسب ها و کاور آرت کمک کنم"""
@@ -145,9 +145,7 @@ async def handle_tag_messages(_, message: Message):
         new_file_path = os.path.join(os.path.dirname(file_path), new_file_name)
 
         os.rename(file_path, new_file_path)
-        CAPTION = f"""ترک جدید {states[chat_id]["name"]}
-        
-        [آرشیو موزیک 🎧](https://t.me/arcive_music)"""
+        CAPTION = f"ترک جدید {states[chat_id]["name"]}"
         await app.send_audio(
             chat_id=chat_id,
             audio=new_file_path,
