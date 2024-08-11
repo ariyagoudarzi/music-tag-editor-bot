@@ -69,6 +69,13 @@ Contributions are welcome! Feel free to submit a pull request or open an issue t
 3. Make your changes and commit them.
 4. Push to your branch and submit a PR.
 
+## All Features
+
+- You can allow your specific people to use the robot, for this you can change the list of IDs allowed to use the robot in the config.ini file.
+- The robot will put your Instagram channel or page ID in almost all the robot tags so that you can rest assured that everyone will know that you edited this song. To change it, you can refer to the codes related to the edit tag and see that, for example, I put my Telegram channel ID.
+- The robot takes the photo you send to the size of 1080x1080 and puts your logo, which is chnl.png file, on it with a ratio of one eighth.
+- The robot will automatically set the year you are in as the date of the song, but in the next versions I will provide the ability to set it manually.
+
 ## 📜 License
 
 This project is licensed under the MIT License.
